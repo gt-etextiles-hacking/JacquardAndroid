@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
     private BluetoothAdapter bluetoothAdapter;
     private Snackbar snackbar;
     private Button connectButton;
+    private Button viewThreadButton;
 
     private JacquardJacket jacket;
 
@@ -68,6 +69,15 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
             public void onClick(View view) {
                 if (setupBluetooth()) {
                     pairWithJacket();
+                }
+            }
+        });
+        viewThreadButton = findViewById(R.id.viewThreadButton);
+        viewThreadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (setupBluetooth()) {
+                    
                 }
             }
         });

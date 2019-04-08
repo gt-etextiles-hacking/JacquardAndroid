@@ -15,6 +15,11 @@
             android:layout_height="wrap_content"
             android:text="Connect to Jacket"
             android:id="@+id/connectButton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Threads"
+            android:id="@+id/viewThreadButton"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
