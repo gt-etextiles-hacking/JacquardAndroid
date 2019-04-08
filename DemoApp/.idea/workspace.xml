@@ -34,30 +34,30 @@
           <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+                <state relative-caret-position="349">
+                  <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#2325#2540#0" expanded="true" />
-                    <element signature="e#2539#2540#0" expanded="true" />
-                    <element signature="e#2651#2849#0" expanded="true" />
-                    <element signature="e#2848#2849#0" expanded="true" />
-                    <element signature="e#3600#3801#0" expanded="true" />
-                    <element signature="e#3800#3801#0" expanded="true" />
-                    <element signature="e#4031#4663#0" expanded="true" />
-                    <element signature="e#4340#4595#0" expanded="true" />
-                    <element signature="e#4594#4595#0" expanded="true" />
-                    <element signature="e#4662#4663#0" expanded="true" />
-                    <element signature="e#4786#5317#0" expanded="true" />
-                    <element signature="e#5011#5267#0" expanded="true" />
-                    <element signature="e#5266#5267#0" expanded="true" />
-                    <element signature="e#5316#5317#0" expanded="true" />
-                    <element signature="e#5419#5682#0" expanded="true" />
-                    <element signature="e#5681#5682#0" expanded="true" />
-                    <element signature="e#6175#6645#0" expanded="true" />
-                    <element signature="e#6338#6601#0" expanded="true" />
-                    <element signature="e#6600#6601#0" expanded="true" />
-                    <element signature="e#6644#6645#0" expanded="true" />
+                    <element signature="e#2427#2642#0" expanded="true" />
+                    <element signature="e#2641#2642#0" expanded="true" />
+                    <element signature="e#2897#3366#0" expanded="true" />
+                    <element signature="e#3365#3366#0" expanded="true" />
+                    <element signature="e#4117#4318#0" expanded="true" />
+                    <element signature="e#4317#4318#0" expanded="true" />
+                    <element signature="e#4548#5180#0" expanded="true" />
+                    <element signature="e#4857#5112#0" expanded="true" />
+                    <element signature="e#5111#5112#0" expanded="true" />
+                    <element signature="e#5179#5180#0" expanded="true" />
+                    <element signature="e#5303#5834#0" expanded="true" />
+                    <element signature="e#5528#5784#0" expanded="true" />
+                    <element signature="e#5783#5784#0" expanded="true" />
+                    <element signature="e#5833#5834#0" expanded="true" />
+                    <element signature="e#5936#6199#0" expanded="true" />
+                    <element signature="e#6198#6199#0" expanded="true" />
+                    <element signature="e#6692#7162#0" expanded="true" />
+                    <element signature="e#6855#7118#0" expanded="true" />
+                    <element signature="e#7117#7118#0" expanded="true" />
+                    <element signature="e#7161#7162#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -69,8 +69,8 @@
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+                <state relative-caret-position="442">
+                  <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -163,7 +163,7 @@
           <file leaf-file-name="JacquardJacket.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="470">
+                <state relative-caret-position="623">
                   <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="34" selection-end-line="233" selection-end-column="34" />
                   <folding />
                 </state>
@@ -191,6 +191,7 @@
       <find>gatt</find>
       <find>jacket</find>
       <find>setup</find>
+      <find>connectbutton</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2805,7 +2806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="623">
           <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="34" selection-end-line="233" selection-end-column="34" />
           <folding />
         </state>
@@ -2883,38 +2884,38 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="442">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+        <state relative-caret-position="349">
+          <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2325#2540#0" expanded="true" />
-            <element signature="e#2539#2540#0" expanded="true" />
-            <element signature="e#2651#2849#0" expanded="true" />
-            <element signature="e#2848#2849#0" expanded="true" />
-            <element signature="e#3600#3801#0" expanded="true" />
-            <element signature="e#3800#3801#0" expanded="true" />
-            <element signature="e#4031#4663#0" expanded="true" />
-            <element signature="e#4340#4595#0" expanded="true" />
-            <element signature="e#4594#4595#0" expanded="true" />
-            <element signature="e#4662#4663#0" expanded="true" />
-            <element signature="e#4786#5317#0" expanded="true" />
-            <element signature="e#5011#5267#0" expanded="true" />
-            <element signature="e#5266#5267#0" expanded="true" />
-            <element signature="e#5316#5317#0" expanded="true" />
-            <element signature="e#5419#5682#0" expanded="true" />
-            <element signature="e#5681#5682#0" expanded="true" />
-            <element signature="e#6175#6645#0" expanded="true" />
-            <element signature="e#6338#6601#0" expanded="true" />
-            <element signature="e#6600#6601#0" expanded="true" />
-            <element signature="e#6644#6645#0" expanded="true" />
+            <element signature="e#2427#2642#0" expanded="true" />
+            <element signature="e#2641#2642#0" expanded="true" />
+            <element signature="e#2897#3366#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#4117#4318#0" expanded="true" />
+            <element signature="e#4317#4318#0" expanded="true" />
+            <element signature="e#4548#5180#0" expanded="true" />
+            <element signature="e#4857#5112#0" expanded="true" />
+            <element signature="e#5111#5112#0" expanded="true" />
+            <element signature="e#5179#5180#0" expanded="true" />
+            <element signature="e#5303#5834#0" expanded="true" />
+            <element signature="e#5528#5784#0" expanded="true" />
+            <element signature="e#5783#5784#0" expanded="true" />
+            <element signature="e#5833#5834#0" expanded="true" />
+            <element signature="e#5936#6199#0" expanded="true" />
+            <element signature="e#6198#6199#0" expanded="true" />
+            <element signature="e#6692#7162#0" expanded="true" />
+            <element signature="e#6855#7118#0" expanded="true" />
+            <element signature="e#7117#7118#0" expanded="true" />
+            <element signature="e#7161#7162#0" expanded="true" />
           </folding>
         </state>
       </provider>

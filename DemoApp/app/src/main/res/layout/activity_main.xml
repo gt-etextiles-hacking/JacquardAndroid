@@ -20,6 +20,11 @@
             android:layout_height="wrap_content"
             android:text="View Threads"
             android:id="@+id/viewThreadButton"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/threadList"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

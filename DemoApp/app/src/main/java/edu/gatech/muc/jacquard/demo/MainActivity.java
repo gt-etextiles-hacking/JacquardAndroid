@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import edu.gatech.muc.jacquard.R;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
     private Snackbar snackbar;
     private Button connectButton;
     private Button viewThreadButton;
+    private TextView threadList;
+    private boolean vthread = false;
 
     private JacquardJacket jacket;
 
@@ -72,12 +75,21 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
                 }
             }
         });
+        threadList = findViewById(R.id.threadList);
+        threadList.setText("000000000000000");
+        threadList.setVisibility(View.GONE);
         viewThreadButton = findViewById(R.id.viewThreadButton);
         viewThreadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (setupBluetooth()) {
-                    
+                    if (vthread) {
+                        vthread = false;
+                        threadList.setVisibility(View.GONE);
+                    } else {
+                        vthread = true;
+                        threadList.setVisibility(View.VISIBLE);
+                    }
                 }
             }
         });
