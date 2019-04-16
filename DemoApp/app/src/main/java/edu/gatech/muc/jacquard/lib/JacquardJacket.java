@@ -14,9 +14,10 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.util.SparseArray;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
@@ -59,7 +60,7 @@ public class JacquardJacket {
     private BluetoothGatt bluetoothGatt;
     private BluetoothGattCharacteristic glowCharacteristic;
     private JacketActionListener actionListener;
-    private List<CustomGestureRecognizer> gestureRecognizers;
+    private final List<CustomGestureRecognizer> gestureRecognizers;
 
     /**
      * Instantiates a new Jacquard jacket object to connect to
@@ -74,7 +75,7 @@ public class JacquardJacket {
         this.macAddress = macAddress;
         this.bluetoothAdapter = adapter;
         this.status = JacquardStatus.DISCONNECTED;
-        this.gestureRecognizers = new ArrayList<>();
+        this.gestureRecognizers = Collections.synchronizedList(new ArrayList<CustomGestureRecognizer>());
     }
 
     /**
@@ -195,7 +196,7 @@ public class JacquardJacket {
             throw new IllegalStateException("Unable to find glow bluetooth characteristic");
         }
         glowCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
-        glowCharacteristic.setValue(JacketGlowHelper.convertHexStringToByteArray(data));
+        glowCharacteristic.setValue(JacketDataHelper.convertHexStringToByteArray(data));
     }
 
     /**
@@ -214,25 +215,35 @@ public class JacquardJacket {
             @Override
             public void onServicesDiscovered(BluetoothGatt gatt, int status) {
                 super.onServicesDiscovered(gatt, status);
+                Log.i("JacquardJacket", "BLE services discovered");
                 BluetoothGattCharacteristic gestureCharac = gatt.getService(UUID.fromString(SERVICE_UUID)).getCharacteristic(UUID.fromString(GESTURE_CHAR_UUID));
                 listenForCharacteristicChanges(gatt, gestureCharac);
-                BluetoothGattCharacteristic threadCharac = gatt.getService(UUID.fromString(SERVICE_UUID)).getCharacteristic(UUID.fromString(THREAD_CHAR_UUID));
-                listenForCharacteristicChanges(gatt, threadCharac);
-                for (BluetoothGattService service : gatt.getServices()) {
-                    for (BluetoothGattCharacteristic c : service.getCharacteristics()) {
-                        if ((c.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE) != 0) {
-                            glowCharacteristic = c;
-                            break;
+            }
+
+            @Override
+            public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {
+                super.onDescriptorWrite(gatt, descriptor, status);
+                if (descriptor.getCharacteristic().getUuid().toString().toUpperCase().equals(GESTURE_CHAR_UUID)) {
+                    // Registered listener for gesture characteristic
+                    BluetoothGattCharacteristic threadCharac = gatt.getService(UUID.fromString(SERVICE_UUID)).getCharacteristic(UUID.fromString(THREAD_CHAR_UUID));
+                    listenForCharacteristicChanges(gatt, threadCharac);
+                    for (BluetoothGattService service : gatt.getServices()) {
+                        for (BluetoothGattCharacteristic c : service.getCharacteristics()) {
+                            if ((c.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE) != 0) {
+                                glowCharacteristic = c;
+                                break;
+                            }
                         }
                     }
+                } else if (descriptor.getCharacteristic().getUuid().toString().toUpperCase().equals(THREAD_CHAR_UUID)) {
+                    // Registered listener for thread characteristic
+                    updateStatus(JacquardStatus.READY);
                 }
-                updateStatus(JacquardStatus.READY);
             }
 
             @Override
             public void onCharacteristicChanged(BluetoothGatt gatt, final BluetoothGattCharacteristic characteristic) {
                 super.onCharacteristicChanged(gatt, characteristic);
-                Log.i("CHARAC_UPDATE", "UUID=" + characteristic.getUuid().toString());
                 if (characteristic.getUuid().toString().toUpperCase().equals(GESTURE_CHAR_UUID)) {
                     byte[] bytes = characteristic.getValue();
                     int value = bytes[0];
@@ -242,7 +253,13 @@ public class JacquardJacket {
                     }
                 } else if (characteristic.getUuid().toString().toUpperCase().equals(THREAD_CHAR_UUID)) {
                     byte[] bytes = characteristic.getValue();
-
+                    String hexData = JacketDataHelper.convertByteArrayToHexString(bytes);
+                    double[] forces = JacquardThreadHelper.parseThreadDataIntoForces(hexData);
+                    synchronized (gestureRecognizers) {
+                        for (CustomGestureRecognizer recognizer : gestureRecognizers) {
+                            recognizer.onReceiveThreadData(forces);
+                        }
+                    }
                 }
             }
 
@@ -280,8 +297,8 @@ public class JacquardJacket {
             this.statusUpdateListener.onStatusChange(status);
         }
         if (this.status == JacquardStatus.READY) {
-            this.glow(JacketGlowHelper.RAINBOW_1);
-            this.glow(JacketGlowHelper.RAINBOW_2);
+            this.glow(JacketDataHelper.RAINBOW_1);
+            this.glow(JacketDataHelper.RAINBOW_2);
         }
     }
 }

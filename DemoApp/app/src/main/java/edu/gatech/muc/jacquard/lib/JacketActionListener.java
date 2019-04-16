@@ -8,5 +8,4 @@ public interface JacketActionListener {
      * @param gesture The gesture that was performed
      */
     void onGesturePerformed(@NonNull JacquardGesture gesture);
-    void onThreadPressed();
 }

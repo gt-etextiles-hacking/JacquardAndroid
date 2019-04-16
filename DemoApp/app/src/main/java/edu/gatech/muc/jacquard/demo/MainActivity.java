@@ -16,9 +16,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import edu.gatech.muc.jacquard.R;
+import edu.gatech.muc.jacquard.lib.CustomGestureRecognizer;
+import edu.gatech.muc.jacquard.lib.GestureRecognizerListener;
 import edu.gatech.muc.jacquard.lib.JacketActionListener;
 import edu.gatech.muc.jacquard.lib.JacquardStatus;
 import edu.gatech.muc.jacquard.lib.JacketStatusUpdateListener;
@@ -26,7 +29,7 @@ import edu.gatech.muc.jacquard.lib.JacquardGesture;
 import edu.gatech.muc.jacquard.lib.JacquardJacket;
 import edu.gatech.muc.jacquard.lib.SuccessCallback;
 
-public class MainActivity extends AppCompatActivity implements JacketActionListener, JacketStatusUpdateListener {
+public class MainActivity extends AppCompatActivity implements JacketActionListener, JacketStatusUpdateListener, GestureRecognizerListener {
 
     private static final String MAC_ADDRESS = "E9:17:5F:F5:99:89";
 
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
     private BluetoothAdapter bluetoothAdapter;
     private Snackbar snackbar;
     private Button connectButton;
+    private TextView threadText;
 
     private JacquardJacket jacket;
 
@@ -71,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
                 }
             }
         });
+        threadText = findViewById(R.id.threadsString);
     }
 
     private boolean setupBluetooth() {
@@ -96,11 +101,6 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
                 Toast.makeText(getBaseContext(), "Gesture: " + gesture.name(), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    @Override
-    public void onThreadPressed() {
-
     }
 
     @Override
@@ -152,6 +152,18 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
         }
     }
 
+    @Override
+    public void onGestureRecognized(@NonNull CustomGestureRecognizer recognizer) {
+        switch (recognizer.getTag()) {
+            case 1:
+                threadText.setText("PRESSED");
+                break;
+            case 2:
+                threadText.setText("RELEASED");
+                break;
+        }
+    }
+
     private void pairWithJacket() {
         connectButton.setEnabled(false);
         snackbar = Snackbar.make(findViewById(android.R.id.content), "Searching...", Snackbar.LENGTH_INDEFINITE);
@@ -160,6 +172,8 @@ public class MainActivity extends AppCompatActivity implements JacketActionListe
         jacket = new JacquardJacket(MAC_ADDRESS, bluetoothAdapter);
         jacket.setJacketStatusUpdateListener(this);
         jacket.setJacketActionListener(this);
+        jacket.addGestureRecognizer(new MyTouchGestureRecognizer(1, this));
+        jacket.addGestureRecognizer(new MyReleaseGestureRecognizer(2, this));
         jacket.searchAndPair(this, new SuccessCallback() {
             @Override
             public void onResult(boolean success) {
