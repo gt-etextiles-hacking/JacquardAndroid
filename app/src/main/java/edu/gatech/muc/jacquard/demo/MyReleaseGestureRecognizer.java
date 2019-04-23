@@ -1,7 +1,8 @@
 package edu.gatech.muc.jacquard.demo;
 
-import edu.gatech.muc.jacquard.lib.CustomGestureRecognizer;
-import edu.gatech.muc.jacquard.lib.GestureRecognizerListener;
+
+import edu.gatech.jacquardtoolkit.CustomGestureRecognizer;
+import edu.gatech.jacquardtoolkit.GestureRecognizerListener;
 
 public class MyReleaseGestureRecognizer extends CustomGestureRecognizer {
 

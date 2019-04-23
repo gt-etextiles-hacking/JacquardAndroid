@@ -19,15 +19,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import edu.gatech.jacquardtoolkit.CustomGestureRecognizer;
+import edu.gatech.jacquardtoolkit.GestureRecognizerListener;
+import edu.gatech.jacquardtoolkit.JacketActionListener;
+import edu.gatech.jacquardtoolkit.JacketStatusUpdateListener;
+import edu.gatech.jacquardtoolkit.JacquardGesture;
+import edu.gatech.jacquardtoolkit.JacquardJacket;
+import edu.gatech.jacquardtoolkit.JacquardStatus;
+import edu.gatech.jacquardtoolkit.SuccessCallback;
 import edu.gatech.muc.jacquard.R;
-import edu.gatech.muc.jacquard.lib.CustomGestureRecognizer;
-import edu.gatech.muc.jacquard.lib.GestureRecognizerListener;
-import edu.gatech.muc.jacquard.lib.JacketActionListener;
-import edu.gatech.muc.jacquard.lib.JacquardStatus;
-import edu.gatech.muc.jacquard.lib.JacketStatusUpdateListener;
-import edu.gatech.muc.jacquard.lib.JacquardGesture;
-import edu.gatech.muc.jacquard.lib.JacquardJacket;
-import edu.gatech.muc.jacquard.lib.SuccessCallback;
 
 public class MainActivity extends AppCompatActivity implements JacketActionListener, JacketStatusUpdateListener, GestureRecognizerListener {
 
