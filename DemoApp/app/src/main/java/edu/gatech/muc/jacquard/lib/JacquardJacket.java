@@ -16,7 +16,6 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
@@ -197,6 +196,7 @@ public class JacquardJacket {
         }
         glowCharacteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
         glowCharacteristic.setValue(JacketDataHelper.convertHexStringToByteArray(data));
+        bluetoothGatt.writeCharacteristic(glowCharacteristic);
     }
 
     /**
@@ -297,8 +297,8 @@ public class JacquardJacket {
             this.statusUpdateListener.onStatusChange(status);
         }
         if (this.status == JacquardStatus.READY) {
-            this.glow(JacketDataHelper.RAINBOW_1);
-            this.glow(JacketDataHelper.RAINBOW_2);
+            this.glow(JacketDataHelper.GLOW_RAINBOW_1);
+            //this.glow(JacketDataHelper.GLOW_RAINBOW_2);
         }
     }
 }

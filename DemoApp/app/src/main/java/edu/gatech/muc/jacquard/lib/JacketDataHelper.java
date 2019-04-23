@@ -1,8 +1,8 @@
 package edu.gatech.muc.jacquard.lib;
 
 public class JacketDataHelper {
-    public static final String RAINBOW_1 = "801308001008180BDA060A0810107830013801";
-    public static final String RAINBOW_2 = "414000";
+    public static final String GLOW_RAINBOW_1 = "801308001008180BDA060A0810107830013801414000";
+    public static final String GLOW_RAINBOW_2 = "414000";
 
     public static byte[] convertHexStringToByteArray(String hex) {
         int len = hex.length();

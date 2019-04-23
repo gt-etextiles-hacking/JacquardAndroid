@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afcc074c-66bd-413f-a969-199716065554" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyReleaseGestureRecognizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyTouchGestureRecognizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardThreadHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/CustomGestureRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/CustomGestureRecognizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketGlowHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +28,7 @@
     <session id="-1971227625">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.4" value="1" />
@@ -45,26 +38,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="25" />
+          <entry key="java" value="27" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="27" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="20" />
-          <entry key="java" value="10887" />
+          <entry key="java" value="11096" />
           <entry key="xml" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10887" />
+          <entry key="JAVA" value="11096" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="XML" value="70" />
         </counts>
@@ -76,76 +69,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="258" column="87" selection-start-line="258" selection-start-column="87" selection-end-line="258" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+            <state relative-caret-position="3759">
+              <caret line="279" column="98" selection-start-line="279" selection-start-column="98" selection-end-line="279" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyReleaseGestureRecognizer.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyTouchGestureRecognizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/CustomGestureRecognizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-              <folding>
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardThreadHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="45">
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -174,6 +108,7 @@
       <find>ADVER</find>
       <find>snackbar.dismiss</find>
       <find>ADVERT</find>
+      <find>glow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,11 +128,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardThreadHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketActionListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/CustomGestureRecognizer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyTouchGestureRecognizer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyReleaseGestureRecognizer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java" />
       </list>
     </option>
   </component>
@@ -422,7 +358,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.32965687" />
       <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32965687" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32965687" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32965687" />
       <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="right" id="Preview" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -472,20 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardThreadHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -494,13 +416,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/GestureRecognizerListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -508,10 +423,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyReleaseGestureRecognizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="258" column="87" selection-start-line="258" selection-start-column="87" selection-end-line="258" selection-end-column="87" />
+        <state relative-caret-position="234">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyTouchGestureRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -530,30 +472,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardThreadHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+        <state relative-caret-position="60">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyTouchGestureRecognizer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacquardJacket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="3759">
+          <caret line="279" column="98" selection-start-line="279" selection-start-column="98" selection-end-line="279" selection-end-column="98" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/demo/MyReleaseGestureRecognizer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/muc/jacquard/lib/JacketDataHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
